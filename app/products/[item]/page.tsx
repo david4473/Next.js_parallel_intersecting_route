@@ -54,7 +54,13 @@ export default async function Page({ params: { item } }: IimageProps) {
           <span style={span}>Socials:</span>
           <ul>
             <li style={{ display: "inline-block", marginRight: "5px" }}>
-              <a href={`twitter.com/${image.user.twitter_username}`}>Twitter</a>
+              <a
+                href={`twitter.com/${image.user.twitter_username}`}
+                target="_blank"
+                referrerPolicy="no-referrer"
+              >
+                Twitter
+              </a>
               ,
             </li>
             <li style={{ display: "inline-block" }}>
