@@ -55,7 +55,7 @@ export default async function Page({ params: { item } }: IimageProps) {
           <ul>
             <li style={{ display: "inline-block", marginRight: "5px" }}>
               <a
-                href={`twitter.com/${image.user.twitter_username}`}
+                href={`https://twitter.com/${image.user.twitter_username}`}
                 target="_blank"
                 referrerPolicy="no-referrer"
               >
@@ -64,7 +64,13 @@ export default async function Page({ params: { item } }: IimageProps) {
               ,
             </li>
             <li style={{ display: "inline-block" }}>
-              <a href={image.user.portfolio_url}>Portfolio</a>
+              <a
+                href={image.user.portfolio_url}
+                target="_blank"
+                referrerPolicy="no-referrer"
+              >
+                Portfolio
+              </a>
             </li>
           </ul>
         </div>
